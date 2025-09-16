@@ -1,3 +1,3 @@
 # Portfolio
 My portfolio
-Name ayush kuamr gupta 
+Name Ayush kuamr gupta 
