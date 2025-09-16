@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Khushi-Roy-123&label=Profile+Views&color=blueviolet&style=flat" />
+  <img src="https://komarev.com/ghpvc/?username=aayush-sahu30&label=Profile+Views&color=blueviolet&style=flat" />
 </p>
 
 <p align="center"><i>"Code with creativity. Build with purpose."</i></p>
