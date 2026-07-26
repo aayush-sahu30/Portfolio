@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayush Gupta — ML & Cloud Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- PROGRESS BAR -->
+  <div id="progress"></div>
+
+  <!-- BACKGROUND CANVAS -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- AMBIENT ORBS -->
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">AG</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#techstack">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:ayushkumarg615@gmail.com" class="nav-cta">Hire Me</a>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <!-- Robot -->
+    <div id="robot-wrap">
+      <canvas id="robot-canvas"></canvas>
+      <div class="robot-glow"></div>
+    </div>
+
+    <!-- Text -->
+    <div id="hero-text">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for Opportunities
+      </div>
+      <h1 class="hero-name">Ayush<br>Gupta</h1>
+      <div class="hero-role">ML & Cloud Engineer</div>
+      <p class="hero-desc">Building intelligent systems at the intersection of machine learning, cloud infrastructure, and full-stack engineering.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-outline">Let's Talk</a>
+      </div>
+    </div>
+
+    <!-- Photo -->
+    <div id="hero-photo">
+      <div class="photo-ring-right"></div>
+      <div class="photo-ring-right2"></div>
+      <div class="avatar-img-wrap">
+       <img src="photo.jpeg" alt="Ayush Gupta" class="avatar-img" />
+        <div class="avatar-overlay"></div>
+        <div class="scan-line"></div>
+      </div>
+      <div class="hud hud-tr">AI</div>
+      <div class="hud hud-br">Cloud</div>
+      <div class="avatar-name">Ayush Gupta</div>
+      <div class="avatar-role-tag">ML & Cloud Engineer</div>
+      <div class="avatar-dots">
+        <span class="adot adot1"></span>
+        <span class="adot adot2"></span>
+        <span class="adot adot3"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="reveal">
+      <div class="sec-label">About Me</div>
+      <h2 class="sec-title">Engineer by training,<br>problem-solver by passion</h2>
+      <div class="sec-divider"></div>
+    </div>
+    <div class="about-grid">
+      <div class="reveal">
+        <p class="about-text">I'm a Computer Science and Engineering student at <strong>Kalinga Institute of Industrial Technology</strong>, passionate about solving complex problems through technology. I specialise in designing, training, and deploying ML models at scale, paired with robust cloud infrastructure.</p>
+        <p class="about-text">My work spans from fine-tuning large language models and building computer vision pipelines, to architecting multi-service cloud systems on AWS and GCP.</p>
+
+        <div class="skills-group-title">Machine Learning</div>
+        <div class="skills-row">
+          <span class="skill-pill skill-ml">Python</span>
+          <span class="skill-pill skill-ml">TensorFlow</span>
+          <span class="skill-pill skill-ml">PyTorch</span>
+          <span class="skill-pill skill-ml">Scikit-learn</span>
+          <span class="skill-pill skill-ml">NLP / LLMs</span>
+          <span class="skill-pill skill-ml">OpenCV</span>
+        </div>
+        <div class="skills-group-title">Cloud & DevOps</div>
+        <div class="skills-row">
+          <span class="skill-pill skill-cloud">AWS</span>
+          <span class="skill-pill skill-cloud">GCP</span>
+          <span class="skill-pill skill-cloud">Docker</span>
+          <span class="skill-pill skill-cloud">Kubernetes</span>
+          <span class="skill-pill skill-cloud">Terraform</span>
+          <span class="skill-pill skill-cloud">CI/CD</span>
+        </div>
+        <div class="skills-group-title">Development</div>
+        <div class="skills-row">
+          <span class="skill-pill skill-dev">React</span>
+          <span class="skill-pill skill-dev">FastAPI</span>
+          <span class="skill-pill skill-dev">Node.js</span>
+          <span class="skill-pill skill-dev">PostgreSQL</span>
+          <span class="skill-pill skill-dev">REST APIs</span>
+        </div>
+      </div>
+
+      <div class="about-stats reveal">
+        <div class="stat-box">
+          <div class="stat-num">KIIT</div>
+          <div class="stat-label">Kalinga Institute of Industrial Technology — CSE</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">3+</div>
+          <div class="stat-label">AI/ML projects shipped end-to-end</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Cloud-deployed production systems</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Commitment to clean, scalable code</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK & SKILLS -->
+  <section id="techstack" class="section" style="min-height:auto;padding-top:0;">
+    <div class="reveal">
+      <div class="sec-label">My Skills</div>
+      <h2 class="sec-title">Tech Stack & Expertise</h2>
+      <div class="sec-divider"></div>
+    </div>
+
+    <!-- 3D Rotating Cube Header -->
+    <div class="cube-header reveal">
+      <div class="cube-scene">
+        <div class="cube" id="skillCube">
+          <div class="cube-face cube-front"><span class="cube-icon">🐍</span><span class="cube-label">Python</span></div>
+          <div class="cube-face cube-back"><span class="cube-icon">☁️</span><span class="cube-label">AWS</span></div>
+          <div class="cube-face cube-left"><span class="cube-icon">🔥</span><span class="cube-label">PyTorch</span></div>
+          <div class="cube-face cube-right"><span class="cube-icon">⚛️</span><span class="cube-label">React</span></div>
+          <div class="cube-face cube-top"><span class="cube-icon">🐳</span><span class="cube-label">Docker</span></div>
+          <div class="cube-face cube-bottom"><span class="cube-icon">🤖</span><span class="cube-label">ML</span></div>
+        </div>
+      </div>
+      <div class="cube-shadow"></div>
+    </div>
+
+    <!-- Skills Progress Bars - 3 columns -->
+    <div class="skills-bars-grid reveal">
+
+      <!-- ML Column -->
+      <div class="skills-col">
+        <div class="skills-col-title">
+          <span class="col-dot" style="background:#a78bfa;"></span>
+          Machine Learning
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span>Python</span><span class="skill-pct">70%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="70" style="--c:#a78bfa;"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span>TensorFlow</span><span class="skill-pct">60%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="60" style="--c:#a78bfa;"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span>PyTorch</span><span class="skill-pct">55%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="55" style="--c:#a78bfa;"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span>Scikit-learn</span><span class="skill-pct">65%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="65" style="--c:#a78bfa;"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span>LangChain / RAG</span><span class="skill-pct">50%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="50" style="--c:#a78bfa;"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span>OpenCV</span><span class="skill-pct">60%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="60" style="--c:#a78bfa;"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span>MLflow</span><span class="skill-pct">50%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="50" style="--c:#a78bfa;"></div></div>
+        </div>
+      </div>
+
+      <!-- Cloud Column -->
+      <div class="skills-col">
+        <div class="skills-col-title">
+          <span class="col-dot" style="background:#00d4ff;"></span>
+          Cloud & DevOps
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span>AWS</span><span class="skill-pct">60%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="60" style="--c:#00d4ff;"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span>GCP</span><span class="skill-pct">50%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="50" style="--c:#00d4ff;"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span>Docker</span><span class="skill-pct">60%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="60" style="--c:#00d4ff;"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span>Kubernetes</span><span class="skill-pct">50%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="50" style="--c:#00d4ff;"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span>Terraform</span><span class="skill-pct">50%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="50" style="--c:#00d4ff;"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span>CI/CD Pipelines</span><span class="skill-pct">55%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="55" style="--c:#00d4ff;"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span>AWS Lambda</span><span class="skill-pct">55%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="55" style="--c:#00d4ff;"></div></div>
+        </div>
+      </div>
+
+      <!-- Dev Column -->
+      <div class="skills-col">
+        <div class="skills-col-title">
+          <span class="col-dot" style="background:#10b981;"></span>
+          Development
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span>React.js</span><span class="skill-pct">60%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="60" style="--c:#10b981;"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span>FastAPI</span><span class="skill-pct">65%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="65" style="--c:#10b981;"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span>Node.js</span><span class="skill-pct">55%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="55" style="--c:#10b981;"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span>PostgreSQL</span><span class="skill-pct">55%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="55" style="--c:#10b981;"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span>MongoDB</span><span class="skill-pct">50%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="50" style="--c:#10b981;"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span>REST APIs</span><span class="skill-pct">65%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="65" style="--c:#10b981;"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top"><span>WebSockets</span><span class="skill-pct">55%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="55" style="--c:#10b981;"></div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="reveal">
+      <div class="sec-label">Selected Work</div>
+      <h2 class="sec-title">Projects I've built</h2>
+      <div class="sec-divider"></div>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card reveal" style="--glow-color:#a78bfa;">
+        <div class="project-top">
+          <div class="project-emoji" style="background:rgba(124,58,237,0.15);">🏋️</div>
+          <span class="project-badge badge-ai">AI / ML</span>
+        </div>
+        <h3>AI Fitness Tracker</h3>
+        <p>Intelligent fitness companion using computer vision and pose estimation to track workouts in real-time, count reps, detect form errors, and generate personalised fitness plans.</p>
+        <div class="project-stack">
+          <span class="stack-tag">Python</span>
+          <span class="stack-tag">OpenCV</span>
+          <span class="stack-tag">MediaPipe</span>
+          <span class="stack-tag">TensorFlow</span>
+          <span class="stack-tag">FastAPI</span>
+          <span class="stack-tag">React</span>
+        </div>
+        <a href="https://github.com/aayush-sahu30/fitness" target="_blank" rel="noopener noreferrer" class="project-link">View Project →</a>
+      </div>
+
+      <div class="project-card reveal" style="--glow-color:#00d4ff;">
+        <div class="project-top">
+          <div class="project-emoji" style="background:rgba(0,212,255,0.1);">🎓</div>
+          <span class="project-badge badge-ai">AI / NLP</span>
+        </div>
+        <h3>Career Counsellor AI</h3>
+        <p>Conversational AI-powered career guidance platform that analyses skills, interests, and market trends to recommend personalised career paths and learning resources.</p>
+        <div class="project-stack">
+          <span class="stack-tag">LLM / RAG</span>
+          <span class="stack-tag">LangChain</span>
+          <span class="stack-tag">Python</span>
+          <span class="stack-tag">Vector DB</span>
+          <span class="stack-tag">React</span>
+        </div>
+        <a href="https://github.com/aayush-sahu30/carer-counselling-engine" target="_blank" rel="noopener noreferrer" class="project-link">View Project →</a>
+      </div>
+
+      <div class="project-card reveal" style="--glow-color:#10b981;">
+        <div class="project-top">
+          <div class="project-emoji" style="background:rgba(16,185,129,0.1);">🏥</div>
+          <span class="project-badge badge-cloud">Cloud Project</span>
+        </div>
+        <h3>Hospital Chat System</h3>
+        <p>Real-time hospital communication platform on AWS with secure chat between patients, doctors, and staff — featuring microservices architecture and auto-scaling.</p>
+        <div class="project-stack">
+          <span class="stack-tag">AWS</span>
+          <span class="stack-tag">WebSockets</span>
+          <span class="stack-tag">Docker</span>
+          <span class="stack-tag">Kubernetes</span>
+          <span class="stack-tag">Node.js</span>
+        </div>
+        <a href="https://github.com/aayush-sahu30/Hospital-chat" target="_blank" rel="noopener noreferrer" class="project-link">View Project →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="contact-wrap reveal">
+      <div class="sec-label" style="text-align:center;">Get In Touch</div>
+      <h2 class="sec-title" style="margin-bottom:1.2rem;">Let's build something<br>extraordinary</h2>
+      <p>Whether it's a machine learning system, a cloud architecture, or a full-stack product — I'm always open to exciting projects and collaborations.</p>
+      <a href="mailto:ayushkumarg615@gmail.com" class="contact-email">📧 ayushkumarg615@gmail.com</a><br />
+      <a href="mailto:ayushkumarg615@gmail.com" class="btn-primary" style="margin-top:0.5rem;">Send a Message</a>
+
+      <div class="social-links">
+        <a href="https://github.com/aayush-sahu30" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/ayush-gupta-aa8682374/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.452H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Designed & built by <span>Ayush Gupta</span> · ML & Cloud Engineer · © 2026</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="main.js"></script
+</body>
+</html>
